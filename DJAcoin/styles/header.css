@@ -1,0 +1,228 @@
+.header {
+  border: 2px solid #FFD700;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 101;
+  position: fixed;
+  top: 0px;
+}
+
+.left-section {
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+@media(max-width: 500px) {
+  .left-section {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .left-section {
+    margin-left: 20px;
+    font-size: 17px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.Search {
+  width: 200px;
+  height: 30px;
+  color: white;
+  padding-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: black;
+  border: 2px solid #FFD700;
+}
+
+@media(max-width: 500px) {
+  .Search {
+    width: 0;
+    min-width: 100px;
+    height: 30px;
+    color: white;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid #FFD700;
+  }
+}
+ 
+@media (min-width: 810px) {
+  .Search {
+    width: 350px;
+    height: 35px;
+    color: white;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid #FFD700;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Search {
+    width: 500px;
+    height: 35px;
+    color: white;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: black;
+    border: 2px solid #FFD700;
+  }
+}
+
+.Search::placeholder {
+  color: grey;
+}
+
+.right-section {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sell-button,
+.buy-button {
+  width: 60px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: black;
+  color: #FFD700;
+  border: 1px solid white;
+  transition: background 0.15s, color 0.20s;
+}
+
+@media(max-width: 500px) {
+  .sell-button,
+  .buy-button {
+  width: 38px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: black;
+  color: #FFD700;
+  border: 1px solid white;
+  transition: background 0.15s, color 0.20s;
+}
+  .current-user {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+}
+
+@media(min-width: 1200px) {
+  .sell-button,
+  .buy-button {
+  width: 60px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: #FFD700;
+  border: 1px solid white;
+  transition: background 0.15s, color 0.20s;
+}
+}
+
+.sell-button:hover,
+.buy-button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.sell-button:active,
+.buy-button:active {
+  opacity: 0.8;
+}
+
+.current-user {
+  width: 40px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.header-2 {
+  font-size: 14px;
+  background-color: black;
+  border: 2px solid #FFD700;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 62px;
+}
+
+.support {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.support:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.About {
+  margin-left: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.learn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+@media (min-width: 1200px) {
+  .support {
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .About {
+    margin-left: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .learn {
+    cursor: pointer;
+    font-size: 18px;
+  }
+}

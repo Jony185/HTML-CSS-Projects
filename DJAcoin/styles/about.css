@@ -1,0 +1,95 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5em;
+}
+
+@media(max-width: 500px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+  }
+}
+
+.DJA-coin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.coin-name {
+  font-weight: bold;
+  margin: 0px;
+  line-height: 2em;
+}
+
+.coin-advise {
+  min-width: 60%;
+  max-width: 70%;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.coin-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.coin-img {
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 400px;
+}
+
+@media(max-width: 500px) {
+  .coin-img {
+    max-width: 70%;
+    object-fit: contain;
+    max-height: 400px;
+    margin-left: 4em;
+  }
+}
+
+.creator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.Goals {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+@media(max-width: 504px) {
+  .Goals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 1800px) {
+  .Goals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    align-items: start;
+  }
+}
+
+.span-dot {
+  font-size: 25px; 
+  margin-right: 5px;
+}
